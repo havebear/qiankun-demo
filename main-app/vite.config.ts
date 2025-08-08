@@ -8,7 +8,7 @@ export default defineConfig({
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) }
   },
   server: {
-    port: 3000,
+    port: 3001,
     cors: true
   }
 })

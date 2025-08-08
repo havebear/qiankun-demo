@@ -9,6 +9,7 @@ export function useQiankun() {
   });
   start({
     sandbox: {
+      strictStyleIsolation: true,
       experimentalStyleIsolation: true,
     },
   });

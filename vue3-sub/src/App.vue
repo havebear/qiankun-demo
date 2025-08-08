@@ -6,7 +6,6 @@ import HelloWorld from './components/HelloWorld.vue'
   <div class="app">
     Vue3 子应用
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>

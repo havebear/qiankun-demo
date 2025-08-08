@@ -15,7 +15,17 @@ function render(props: any = {}) {
 
 renderWithQiankun({
   mount(props) {
-    console.log('vue3 mount')
+    console.log(props)
+    const { actions } = props as any
+    actions.a = 123
+    console.log('vue3-sub2 actions', actions)
+     // 子应用监听
+     props.onGlobalStateChange((newState: any) => {
+      console.log('[子应用] 收到：', newState)
+    })
+
+    // 子应用主动回传
+    props.setGlobalState({ token: 'from-sub', theme: 'dark' })
     render(props)
   },
   bootstrap() {

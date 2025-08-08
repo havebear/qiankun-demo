@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <div class="app">
-    Vue3 子应用2
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <div class="app">Vue3 子应用2</div>
 </template>
 
 <style scoped>

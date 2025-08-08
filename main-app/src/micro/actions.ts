@@ -1,6 +1,5 @@
-import { initGlobalState } from 'qiankun'
-
+import { initGlobalState, type MicroAppStateActions } from 'qiankun'
 const initialState = { token: '', theme: 'light' }
-const actions = initGlobalState(initialState)
+const actions: MicroAppStateActions = initGlobalState(initialState)
 
 export default actions
